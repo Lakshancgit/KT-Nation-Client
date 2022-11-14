@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-row{
+  margin: 8%;
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .05);
+  border-radius: 0.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.blog-img > {
+  width: 100%;
+  height: 100;
+  transform: translateY(-30px);
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, .3);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog-date span{
+  color: #962c51;
+}
+.ul-cls li{
+  cursor: pointer;
+}
+.blog-title > h2{
+  font-style: normal;
+  line-height: 400;
+}
+.blog-desc > p{
+  font-style: normal;
+  line-height: 2;
 }
