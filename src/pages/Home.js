@@ -11,7 +11,6 @@ class Home extends Component {
   state = {
     posts: null,
   };
-
   componentDidMount() {
     console.log("res");
     axios
@@ -38,9 +37,7 @@ class Home extends Component {
         <NavbarComp />
         <Container>
           <Row>
-            <Col sm={8} style={{ overflowY: "scroll" }}>
-              {recentPostsMarkup}
-            </Col>
+            <Col sm={8}>{recentPostsMarkup}</Col>
             <Col sm={4}>
               <MyProfile />
             </Col>
